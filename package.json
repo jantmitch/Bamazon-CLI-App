@@ -1,0 +1,23 @@
+{
+  "name": "bamazon-cli-app",
+  "version": "1.0.0",
+  "description": "Amazon-like app with node",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jantmitch/Bamazon-CLI-App.git"
+  },
+  "author": "Anthony Mitchell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jantmitch/Bamazon-CLI-App/issues"
+  },
+  "homepage": "https://github.com/jantmitch/Bamazon-CLI-App#readme",
+  "dependencies": {
+    "inquirer": "^5.2.0",
+    "mysql": "^2.15.0"
+  }
+}
