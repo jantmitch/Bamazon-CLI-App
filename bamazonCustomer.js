@@ -39,7 +39,7 @@ function purchase() {
         {
             type: "input",
             name: "purchase",
-            message: "What item would you like to purchase(use the id number)?",
+            message: "What item would you like to purchase(use the item number)?",
         },
         {
             type: "input",
@@ -48,7 +48,20 @@ function purchase() {
         }
 
     ]).then(function (answers) {
+        var query = connection.query("SELECT id FROM products", function(err, res){
+            if (err) throw err;
+            for (i=0; i < res.length; i++){
+                if (answers.purchse === res[i].id) 
+                console.log("You are purhasing " + answers.purchase);
+            }
+            
+        })
 
         console.log(answers);
     })
+}
+
+function itemOrder(){
+    var query = connection.query("SELECT id FROM products")
+    
 }
