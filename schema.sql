@@ -9,7 +9,7 @@ CREATE TABLE products (
 id INT AUTO_INCREMENT NOT NULL,
 product_name TEXT NOT NULL, 
 department_name TEXT NOT NULL,
-price DECIMAL (30,2),
+price DECIMAL (30,2) NOT NULL,
 stock_quantity INT NOT NULL,
 
 PRIMARY KEY (id)
